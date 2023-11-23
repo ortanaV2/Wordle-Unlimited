@@ -23,7 +23,7 @@ while True:
     win = False
     for tries in range(6):
         while True:
-            guess = str(input("\nGuess the word: "))
+            guess = (str(input("\nGuess the word: "))).lower()
             if len(guess) > 5:
                 print("too long!")
             elif len(guess) < 5:
